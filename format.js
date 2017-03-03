@@ -20,3 +20,12 @@ function SaferHTML(templateData) {
 
 var sender = '<script>alert("abc")</script>'; // 恶意代码
 var message = SaferHTML`<p>${sender} has sent you a message.</p>`;
+
+/**
+ * 移除字符串中的所有空格
+ * @param  {[type]} str [description]
+ * @return {[type]}     [description]
+ */
+function removeWs(str) {
+  return str.split(" ").join("");
+}
