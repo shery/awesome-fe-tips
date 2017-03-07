@@ -11,3 +11,15 @@ Promise.prototype.done = function (onFulfilled, onRejected) {
       setTimeout(() => { throw reason }, 0);
     });
 };
+/**
+ * Promise 扩展，部署 finally 方法用于指定不管Promise对象最后状态如何，都会执行的操作
+ * @param  {Function} callback [description]
+ * @return {[type]}            [description]
+ */
+Promise.prototype.finally = function (callback) {
+  let P = this.constructor;
+  return this.then(
+    value  => P.resolve(callback()).then(() => value),
+    reason => P.resolve(callback()).then(() => { throw reason })
+  );
+};
