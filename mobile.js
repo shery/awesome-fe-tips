@@ -1,5 +1,5 @@
 /**
- * 判断是否在移动端打开
+ * 判断是否在移动设备打开
  * @type {Boolean}
  */
 isMobile = 'ontouchstart' in document;
