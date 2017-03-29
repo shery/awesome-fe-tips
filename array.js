@@ -1,7 +1,9 @@
 /**
  * 去除数组的重复成员
  */
-[...new Set(array)]
+ let unique = function(array){
+   return [...new Set(array)];
+ }
 
 let unique = function (array) {
     let ro = {};
