@@ -14,3 +14,10 @@ let str_to_array = function (str) {
 let checkPalindrom = function(str){
   return str_to_array(str).reverse().join('');
 }
+
+
+let rs = (str) =>{
+    return Array.prototype.reduceRight.apply(str,[function(pre,current){
+        return pre + current;
+    },'']);
+}
