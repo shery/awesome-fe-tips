@@ -21,3 +21,7 @@ let rs = (str) =>{
         return pre + current;
     },'']);
 }
+
+let checkPalindrom = function(str){
+  return str == rs(str);
+}
