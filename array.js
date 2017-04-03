@@ -17,6 +17,18 @@ let unique = function (array) {
     return ra;
 }
 
+let countChar = function countChar(str){
+    let ro = {};
+    for(let c of str){
+        if(!ro[c]){
+            ro[c] = 1;
+        }else{
+            ro[c] ++;
+        }
+    }
+    return ro;
+}
+
 /**
  * 合并数组
  */
