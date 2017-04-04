@@ -36,6 +36,21 @@ let countChar = function countChar(str){
     }
     return ro;
 }
+/**
+ * 利用数组 reduce 方法统计字母出现次数
+ * @param  {[type]} str [description]
+ * @return {[type]}     [description]
+ */
+let countChar = function countChar(str){
+    return Array.prototype.reduce.call(str,function(pre,current){
+        if(pre[current]){
+            pre[current] ++;
+        }else{
+            pre[current ] = 1;
+        }
+        return pre;
+    },{});
+}
 
 /**
  * 合并数组
