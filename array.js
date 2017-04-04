@@ -1,10 +1,14 @@
 /**
- * 去除数组的重复成员
+ * 去除数组的重复成员 es6 的 Set() 数据对象
  */
  let unique = function(array){
    return [...new Set(array)];
  }
-
+/**
+ * 利用 Object 对象的键是唯一的特性
+ * @param  {[type]} array [description]
+ * @return {[type]}       [description]
+ */
 let unique = function (array) {
     let ro = {};
     let ra = [];
@@ -16,7 +20,11 @@ let unique = function (array) {
     });
     return ra;
 }
-
+/**
+ * 统计字幕出现次数
+ * @param  {[type]} str [description]
+ * @return {[type]}     [description]
+ */
 let countChar = function countChar(str){
     let ro = {};
     for(let c of str){
