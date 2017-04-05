@@ -77,3 +77,13 @@ let arrB = [4, 5, 6];
 
 // 将 arrB 融合进 arrA, 改变原数组 arrA
 [].push.apply(arrA, arrB);
+
+/**
+ * 数组中的最大差值
+ */
+ let getMaxProfit = function getMaxProfit(arr){
+     let max = Math.max.apply(Math,arr);
+     let min = Math.min.apply(Math,arr);
+     return max - min;
+ }
+ 
