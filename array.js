@@ -51,6 +51,23 @@ let countChar = function countChar(str){
         return pre;
     },{});
 }
+/**
+ * 找出出现最多的字符
+ * @param  {[type]} str [description]
+ * @return {[type]}     [description]
+ */
+let findMaxDuplicateChar = function (str){
+  let chars = countChar(str);
+  let max = 0;
+  let char = null;
+  for(let c in chars){
+    if(chars[c] > max){
+      max = chars[c];
+      char = c;
+    }
+  }
+  return char;
+}
 
 /**
  * 合并数组
