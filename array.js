@@ -86,4 +86,13 @@ let arrB = [4, 5, 6];
      let min = Math.min.apply(Math,arr);
      return max - min;
  }
- 
+/**
+ * 利用 es6 把数组展开，求最大最小值
+ * @param  {[type]} arr [description]
+ * @return {[type]}     [description]
+ */
+ let getMaxProfit = function getMaxProfit(arr){
+     let max = Math.max(...arr);
+     let min = Math.min(...arr);
+     return max - min;
+ }
