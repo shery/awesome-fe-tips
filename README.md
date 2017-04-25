@@ -1,2 +1,2 @@
-# awesome-fe-tips
+# Awesome Fe Tips
 Some Useful Front End tips!
