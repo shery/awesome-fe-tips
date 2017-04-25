@@ -4,7 +4,7 @@
  * @param  {[type]} b [description]
  * @return {[type]}   [description]
  */
-function mul(a, b) {
+function multiply(a, b) {
     var c = 0,
         d = a.toString(),
         e = b.toString();
