@@ -57,3 +57,22 @@ function multiply(a, b) {
     } catch (f) {}
     return Number(d.replace(".", "")) * Number(e.replace(".", "")) / Math.pow(10, c);
 }
+
+
+/**
+ * 浮点数运算修正 -- 除法
+ * @param  {[type]} a [description]
+ * @param  {[type]} b [description]
+ * @return {[type]}   [description]
+ */
+function div(a, b) {
+    var c, d, e = 0,
+        f = 0;
+    try {
+        e = a.toString().split(".")[1].length;
+    } catch (g) {}
+    try {
+        f = b.toString().split(".")[1].length;
+    } catch (g) {}
+    return c = Number(a.toString().replace(".", "")), d = Number(b.toString().replace(".", "")), mul(c / d, Math.pow(10, f - e));
+}
