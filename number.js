@@ -24,7 +24,7 @@ function add(a, b) {
  * @param  {[type]} b [description]
  * @return {[type]}   [description]
  */
-function sub(a, b) {
+function subtract(a, b) {
     var c, d, e;
     try {
         c = a.toString().split(".")[1].length;
