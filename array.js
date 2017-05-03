@@ -96,3 +96,9 @@ let arrB = [4, 5, 6];
      let min = Math.min(...arr);
      return max - min;
  }
+ 
+ function logArguments(...args) {
+    for (let arg of args) {
+        console.log(arg);
+    }
+}
